@@ -1,10 +1,9 @@
 "use client"
 
-import Image from 'next/image'
 import styles from './page.module.css'
-import { useEffect } from 'react'
 
 export default function Home() {
+
   return (
     <div className={styles.container}>
       <center>
@@ -29,11 +28,8 @@ export default function Home() {
         </p>
       </div>
 
-      <div className={`${window.innerWidth <= 1200 ? '' : 'flex my-[20px] gap-5'}`}>
-        <div className={`${window.innerWidth > 1200 && 'min-w-[250px] w-[calc(100vw-400px)] h-[250px] bg-slate-200 flex justify-center items-center'}
-          ${(window.innerWidth <= 1200 && window.innerWidth >= 700) &&
-          'mx-[50px] my-[20px] min-w-[150px] rounded-[5px] h-[250px] bg-slate-200 flex justify-center items-center'}
-          ${window.innerWidth < 700 && 'mx-[25px] my-[20px] min-w-[150px] rounded-[5px] h-[150px] bg-slate-200 flex justify-center items-center'}`}>
+      <div className={styles.advertisement_container}>
+        <div className={`${styles.advertisement_text}`}>
           <p>Advertisement</p>
         </div>
 

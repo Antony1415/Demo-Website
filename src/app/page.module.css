@@ -21,6 +21,22 @@
     justify-content: center;
 }
 
+.advertisement_container {
+    display: flex;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.advertisement_text {
+    min-width: 250px;
+    width: calc(100vw - 600px);
+    height: 250px;
+    background-color: rgb(226, 232, 240, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width: 1200px) {
     .container {
         width: calc(100vw - 475px);
@@ -43,6 +59,24 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .advertisement_container {
+        display: block;
+        margin: 0;
+        gap: 0;
+    }
+
+    .advertisement_text {
+        margin: 20px 30px;
+        min-width: 150px;
+        width: calc(100vw - 540px);
+        border-radius: 5px;
+        height: 250px;
+        background-color: rgb(226, 232, 240, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -69,6 +103,32 @@
         align-items: center;
         justify-content: center;
     }
+
+    .advertisement_text {
+        margin: 20px 35px;
+        min-width: 150px;
+        width: calc(100vw - 430px);
+        border-radius: 5px;
+        height: 200px;
+        background-color: rgb(226, 232, 240, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .advertisement_text {
+        margin: 20px 20px;
+        min-width: 150px;
+        width: calc(100vw - 400px);
+        border-radius: 5px;
+        height: 150px;
+        background-color: rgb(226, 232, 240, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -91,5 +151,32 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .advertisement_text {
+        margin: 20px 15px;
+        min-width: 150px;
+        width: calc(100vw - 285px);
+        border-radius: 5px;
+        height: 150px;
+        background-color: rgb(226, 232, 240, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .advertisement_text {
+        font-size: 10px;
+        margin: 20px 15px;
+        min-width: 75px;
+        width: calc(100vw - 285px);
+        border-radius: 5px;
+        height: 125px;
+        background-color: rgb(226, 232, 240, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
